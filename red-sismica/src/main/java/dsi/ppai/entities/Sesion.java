@@ -20,4 +20,10 @@ public class Sesion {
     private LocalDateTime fechaHoraFin;
     private Usuario usuarioLogueado;
 
+    // Métodos
+
+    public Empleado obtenerRILogueado() {
+        return this.usuarioLogueado.getRILogueado();
+    }
+
 }

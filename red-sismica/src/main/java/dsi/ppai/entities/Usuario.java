@@ -18,4 +18,10 @@ public class Usuario {
     private String nombreUsuario;
     private Empleado empleado;
 
+    // Métodos
+
+    public Empleado getRILogueado() {
+        return this.empleado;
+    }
+
 }
