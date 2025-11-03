@@ -13,6 +13,7 @@ import lombok.NoArgsConstructor;
 public class Rol {
 
     // Atributos
+
     private String nombre;
 
 }

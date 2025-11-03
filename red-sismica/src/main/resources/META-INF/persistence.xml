@@ -5,7 +5,7 @@
     version="3.0">
 
     <!--aca debemos de poner el nombre con el cual identificaremos a la bd (debe estar el mismo mas abajo)-->
-    <persistence-unit name="redsismica" transaction-type="RESOURCE_LOCAL">
+    <persistence-unit name="red-sismica" transaction-type="RESOURCE_LOCAL">
         <!-- Your entity classes -->
         <!-- esta es la parte que siempre debemos de cambiar segun las entitades que manejemos y como llamamos al package-->
         <class>dsi.ppai.entities.CambioEstado</class>
@@ -21,21 +21,24 @@
 
 
         <properties>
-            <!-- JDBC connection -->
-            <property name="jakarta.persistence.jdbc.driver" value="org.h2.Driver" />
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:h2:mem:empleados;DB_CLOSE_DELAY=-1" />
-            <property name="jakarta.persistence.jdbc.user" value="sa" />
-            <property name="jakarta.persistence.jdbc.password" value="" />
+          <!-- JDBC connection (SQLite) -->
+          <property name="jakarta.persistence.jdbc.driver" value="org.sqlite.JDBC" />
+          <!-- Using a file-based SQLite DB named 'red-sismica.db' in the working directory -->
+          <property name="jakarta.persistence.jdbc.url" value="jdbc:sqlite:red-sismica.db" />
+          <property name="jakarta.persistence.jdbc.user" value="" />
+          <property name="jakarta.persistence.jdbc.password" value="" />
 
-            <!-- Hibernate as JPA provider -->
-            <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect" />
-            <property name="hibernate.show_sql" value="true" />
-            <property name="hibernate.format_sql" value="true" />
+          <!-- Hibernate as JPA provider -->
+          <!-- Note: Hibernate does not provide an official SQLite dialect; you may need to add a third-party dialect
+              or use a compatible/custom dialect class on the classpath. Common value used is: org.hibernate.dialect.SQLiteDialect -->
+          <property name="hibernate.dialect" value="org.hibernate.dialect.SQLiteDialect" />
+          <property name="hibernate.show_sql" value="true" />
+          <property name="hibernate.format_sql" value="true" />
 
-            <property name="jakarta.persistence.schema-generation.database.action" value="create"/>
-            <property name="jakarta.persistence.schema-generation.create-source" value="script"/>
-            <!--esto tambien se cambia, dado que tenemos que aclarar donde esta la bd que usamos y su nombre-->
-            <property name="jakarta.persistence.schema-generation.create-script-source" value="META-INF/db-schema.sql"/>
+          <!-- Schema generation: keep using script if your SQL is compatible with SQLite -->
+          <property name="jakarta.persistence.schema-generation.database.action" value="auto-drop"/>
+          <property name="jakarta.persistence.schema-generation.create-source" value="script"/>
+          <property name="jakarta.persistence.schema-generation.create-script-source" value="META-INF/db-schema.sql"/>
         </properties>
     </persistence-unit>
 </persistence>
