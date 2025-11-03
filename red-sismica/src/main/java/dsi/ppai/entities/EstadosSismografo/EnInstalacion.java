@@ -15,5 +15,6 @@ import lombok.NoArgsConstructor;
 @Entity
 @DiscriminatorValue("EnInstalacion")
 public class EnInstalacion extends EstadoSismografo {
+    private String nombre;
 
 }

@@ -15,5 +15,6 @@ import lombok.NoArgsConstructor;
 @Entity
 @DiscriminatorValue("FueraDeServicio")
 public class FueraDeServicio extends EstadoSismografo {
+    private String nombre;
 
 }

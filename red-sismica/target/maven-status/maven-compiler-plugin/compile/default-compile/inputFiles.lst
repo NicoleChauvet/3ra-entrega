@@ -23,3 +23,15 @@ C:\Users\Usuario\Desktop\Nicole\Facultad\DSI\PPAI\3ra entrega\red-sismica\src\ma
 C:\Users\Usuario\Desktop\Nicole\Facultad\DSI\PPAI\3ra entrega\red-sismica\src\main\java\dsi\ppai\entities\Usuario.java
 C:\Users\Usuario\Desktop\Nicole\Facultad\DSI\PPAI\3ra entrega\red-sismica\src\main\java\dsi\ppai\init\DBInit.java
 C:\Users\Usuario\Desktop\Nicole\Facultad\DSI\PPAI\3ra entrega\red-sismica\src\main\java\dsi\ppai\negocio\GestorAdmInspecciones.java
+C:\Users\Usuario\Desktop\Nicole\Facultad\DSI\PPAI\3ra entrega\red-sismica\src\main\java\dsi\ppai\repository\CambioEstadoRepository.java
+C:\Users\Usuario\Desktop\Nicole\Facultad\DSI\PPAI\3ra entrega\red-sismica\src\main\java\dsi\ppai\repository\context\DbContext.java
+C:\Users\Usuario\Desktop\Nicole\Facultad\DSI\PPAI\3ra entrega\red-sismica\src\main\java\dsi\ppai\repository\EmpleadoRepository.java
+C:\Users\Usuario\Desktop\Nicole\Facultad\DSI\PPAI\3ra entrega\red-sismica\src\main\java\dsi\ppai\repository\EstacionSismologicaRepository.java
+C:\Users\Usuario\Desktop\Nicole\Facultad\DSI\PPAI\3ra entrega\red-sismica\src\main\java\dsi\ppai\repository\MotivoFueraServicioRepository.java
+C:\Users\Usuario\Desktop\Nicole\Facultad\DSI\PPAI\3ra entrega\red-sismica\src\main\java\dsi\ppai\repository\MotivoTipoRepository.java
+C:\Users\Usuario\Desktop\Nicole\Facultad\DSI\PPAI\3ra entrega\red-sismica\src\main\java\dsi\ppai\repository\OrdenInspeccionRepository.java
+C:\Users\Usuario\Desktop\Nicole\Facultad\DSI\PPAI\3ra entrega\red-sismica\src\main\java\dsi\ppai\repository\Repository.java
+C:\Users\Usuario\Desktop\Nicole\Facultad\DSI\PPAI\3ra entrega\red-sismica\src\main\java\dsi\ppai\repository\RolRepository.java
+C:\Users\Usuario\Desktop\Nicole\Facultad\DSI\PPAI\3ra entrega\red-sismica\src\main\java\dsi\ppai\repository\SesionRepository.java
+C:\Users\Usuario\Desktop\Nicole\Facultad\DSI\PPAI\3ra entrega\red-sismica\src\main\java\dsi\ppai\repository\SismografoRepository.java
+C:\Users\Usuario\Desktop\Nicole\Facultad\DSI\PPAI\3ra entrega\red-sismica\src\main\java\dsi\ppai\repository\UsuarioRepository.java

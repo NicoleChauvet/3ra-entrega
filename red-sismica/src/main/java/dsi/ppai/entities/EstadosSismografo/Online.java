@@ -15,5 +15,6 @@ import lombok.NoArgsConstructor;
 @Entity
 @DiscriminatorValue("Online")
 public class Online extends EstadoSismografo {
+    private String nombre;
 
 }
