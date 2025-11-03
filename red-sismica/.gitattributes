@@ -1,0 +1,22 @@
+# Handle line endings automatically for files detected as text
+# and leave binary files untouched.
+* text=auto
+
+# The above will handle all files NOT found below
+#
+# These files are text and should be normalized (convert crlf to lf)
+*.java text
+*.xml text
+*.properties text
+*.sql text
+*.md text
+*.html text
+*.css text
+*.js text
+
+# These files are binary and should be left untouched
+# (binary is a macro for -text -diff -merge)
+*.jar binary
+*.class binary
+*.db binary
+

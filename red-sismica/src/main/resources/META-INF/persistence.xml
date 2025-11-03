@@ -21,24 +21,12 @@
 
 
         <properties>
-          <!-- JDBC connection (SQLite) -->
-          <property name="jakarta.persistence.jdbc.driver" value="org.sqlite.JDBC" />
-          <!-- Using a file-based SQLite DB named 'red-sismica.db' in the working directory -->
-          <property name="jakarta.persistence.jdbc.url" value="jdbc:sqlite:red-sismica.db" />
-          <property name="jakarta.persistence.jdbc.user" value="" />
-          <property name="jakarta.persistence.jdbc.password" value="" />
-
-          <!-- Hibernate as JPA provider -->
-          <!-- Note: Hibernate does not provide an official SQLite dialect; you may need to add a third-party dialect
-              or use a compatible/custom dialect class on the classpath. Common value used is: org.hibernate.dialect.SQLiteDialect -->
-          <property name="hibernate.dialect" value="org.hibernate.dialect.SQLiteDialect" />
-          <property name="hibernate.show_sql" value="true" />
-          <property name="hibernate.format_sql" value="true" />
-
-          <!-- Schema generation: keep using script if your SQL is compatible with SQLite -->
-          <property name="jakarta.persistence.schema-generation.database.action" value="auto-drop"/>
-          <property name="jakarta.persistence.schema-generation.create-source" value="script"/>
-          <property name="jakarta.persistence.schema-generation.create-script-source" value="META-INF/db-schema.sql"/>
+            <property name="jakarta.persistence.jdbc.driver" value="org.sqlite.JDBC"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:sqlite:database.db"/>
+            <property name="hibernate.dialect" value="org.hibernate.community.dialect.SQLiteDialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
         </properties>
     </persistence-unit>
 </persistence>

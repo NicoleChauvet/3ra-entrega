@@ -1,0 +1,21 @@
+# IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Maven
+target/
+
+# Log files
+*.log
+
+# Compiled output
+*.class
+*.jar
+*.war
+*.ear
+
+# VM crash logs
+hs_err_pid*
+

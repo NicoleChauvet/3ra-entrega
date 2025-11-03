@@ -2,7 +2,11 @@ package dsi.ppai.entities;
 
 import java.time.LocalDateTime;
 
-// imports
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,10 +16,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@Entity
+@Table(name = "estacion_sismologica")
 public class EstacionSismologica {
 
-    // Atributos
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private int codigoEstacion;
     private String nombre;
     private String documentoCertificacionAdq;

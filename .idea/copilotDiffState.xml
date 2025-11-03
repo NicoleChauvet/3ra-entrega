@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/red-sismica/.gitattributes">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/red-sismica/.gitattributes" />
+              <option name="originalContent" value="# Handle line endings automatically for files detected as text&#10;# and leave binary files untouched.&#10;* text=auto&#10;&#10;# The above will handle all files NOT found below&#10;#&#10;# These files are text and should be normalized (convert crlf to lf)&#10;*.java text&#10;*.xml text&#10;*.properties text&#10;*.sql text&#10;*.md text&#10;*.html text&#10;*.css text&#10;*.js text&#10;&#10;# These files are binary and should be left untouched&#10;# (binary is a macro for -text -diff -merge)&#10;*.jar binary&#10;*.class binary&#10;*.db binary&#10;" />
+              <option name="updatedContent" value="# Handle line endings automatically for files detected as text&#10;# and leave binary files untouched.&#10;* text=auto&#10;&#10;# The above will handle all files NOT found below&#10;#&#10;# These files are text and should be normalized (convert crlf to lf)&#10;*.java text&#10;*.xml text&#10;*.properties text&#10;*.sql text&#10;*.md text&#10;*.html text&#10;*.css text&#10;*.js text&#10;&#10;# These files are binary and should be left untouched&#10;# (binary is a macro for -text -diff -merge)&#10;*.jar binary&#10;*.class binary&#10;*.db binary&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
